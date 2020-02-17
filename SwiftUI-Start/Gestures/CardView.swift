@@ -11,9 +11,27 @@ import SwiftUI
 struct CardView: View {
     
     @Binding var tapped: Bool
+    
+    @State private var scale: CGFloat = 1
+    
     var body: some View {
         VStack {
-            Text("Hello World")
+            Image("1")
+                .resizable()
+                .scaleEffect(scale)
+                .frame(width: 300, height: 300)
+                .aspectRatio(contentMode: .fill)
+                .gesture(MagnificationGesture()
+                    .onChanged{ value in
+                        self.scale = value.magnitude
+                }
+                .onEnded { value in
+                    withAnimation(.spring()) {
+                        self.scale = 1
+                    }
+                }
+            )
+            Text("Card")
                 .font(.largeTitle)
                 .foregroundColor(Color.white)
         }

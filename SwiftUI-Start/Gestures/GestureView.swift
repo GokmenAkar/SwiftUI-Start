@@ -12,10 +12,22 @@ struct GestureView: View {
     
     @State private var tapped: Bool = false
     @State private var cardDragState: CGSize = .zero
-    
+    @State private var cardRotateState: Double = 0
     var body: some View {
         CardView(tapped: $tapped)
             .offset(y: self.cardDragState.height)
+            .rotationEffect(Angle(degrees: cardRotateState))
+            .gesture(RotationGesture()
+                .onChanged({ (angle) in
+                    self.cardRotateState = angle.degrees
+                })
+                .onEnded({ (value) in
+                    withAnimation(.spring()) {
+                        self.cardRotateState = 0
+                    }
+                })
+                
+        )
             .gesture(DragGesture()
                 .onChanged { value in
                     self.cardDragState = value.translation
@@ -24,7 +36,7 @@ struct GestureView: View {
                 withAnimation(.spring()) {
                     self.cardDragState = .zero
                 }
-            }
+                }
         )
             .gesture(TapGesture(count: 1)
                 .onEnded {
