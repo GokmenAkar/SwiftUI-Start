@@ -20,7 +20,7 @@ struct CardView: View {
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(tapped ? Color.purple : Color.green)
         .cornerRadius(30)
-    .padding()
+        .padding()
     }
 }
 
