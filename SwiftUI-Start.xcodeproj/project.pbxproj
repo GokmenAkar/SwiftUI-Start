@@ -17,6 +17,9 @@
 		8B8BE6C223F3DA56005C7E1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8BE6C123F3DA56005C7E1B /* Assets.xcassets */; };
 		8B8BE6C523F3DA56005C7E1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8BE6C423F3DA56005C7E1B /* Preview Assets.xcassets */; };
 		8B8BE6C823F3DA56005C7E1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8BE6C623F3DA56005C7E1B /* LaunchScreen.storyboard */; };
+		8B91462E23FABAB0003E8923 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B91462D23FABAB0003E8923 /* GraphView.swift */; };
+		8B91463023FABAD1003E8923 /* BarGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B91462F23FABAD1003E8923 /* BarGraph.swift */; };
+		8B91463223FABF56003E8923 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B91463123FABF56003E8923 /* Report.swift */; };
 		8BA71AFF23F530030012F385 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA71AFE23F530030012F385 /* StateView.swift */; };
 		8BA71B0223F534870012F385 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA71B0123F534870012F385 /* Task.swift */; };
 		8BA71B0523F534D40012F385 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA71B0423F534D40012F385 /* ToDoListView.swift */; };
@@ -44,6 +47,9 @@
 		8B8BE6C423F3DA56005C7E1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8B8BE6C723F3DA56005C7E1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B8BE6C923F3DA56005C7E1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B91462D23FABAB0003E8923 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		8B91462F23FABAD1003E8923 /* BarGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraph.swift; sourceTree = "<group>"; };
+		8B91463123FABF56003E8923 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		8BA71AFE23F530030012F385 /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
 		8BA71B0123F534870012F385 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		8BA71B0423F534D40012F385 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
@@ -121,6 +127,7 @@
 				8BA71AFC23F52FD30012F385 /* States */,
 				8BA71B0623F551890012F385 /* Binding */,
 				8BE994AA23F6BE3C00E9B652 /* Observable */,
+				8B91462C23FABA96003E8923 /* Graphics */,
 				8B8BE6C923F3DA56005C7E1B /* Info.plist */,
 				8BE994B123F6CCC200E9B652 /* Enviroment */,
 				8B8BE6C323F3DA56005C7E1B /* Preview Content */,
@@ -134,6 +141,16 @@
 				8B8BE6C423F3DA56005C7E1B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B91462C23FABA96003E8923 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				8B91462D23FABAB0003E8923 /* GraphView.swift */,
+				8B91462F23FABAD1003E8923 /* BarGraph.swift */,
+				8B91463123FABF56003E8923 /* Report.swift */,
+			);
+			path = Graphics;
 			sourceTree = "<group>";
 		};
 		8BA71AFC23F52FD30012F385 /* States */ = {
@@ -304,15 +321,18 @@
 				8BF73DFB23F3F02A00B3977B /* HikeView.swift in Sources */,
 				8BA71B0223F534870012F385 /* Task.swift in Sources */,
 				8B3A37C123F4283900F933DB /* Array+Extensions.swift in Sources */,
+				8B91463023FABAD1003E8923 /* BarGraph.swift in Sources */,
 				8BA71B0523F534D40012F385 /* ToDoListView.swift in Sources */,
 				8BE994AE23F6BEF900E9B652 /* FancyScoreView.swift in Sources */,
 				8B3A37BD23F4256E00F933DB /* GridView.swift in Sources */,
 				8BA71B0823F5519E0012F385 /* BindingView.swift in Sources */,
+				8B91463223FABF56003E8923 /* Report.swift in Sources */,
 				8BE994A623F6A2B700E9B652 /* Episode.swift in Sources */,
 				8BE994B323F6CCDC00E9B652 /* EnviromentView.swift in Sources */,
 				8B3A37C323F4299600F933DB /* Car.swift in Sources */,
 				8BE994A923F6B19400E9B652 /* PlayButton.swift in Sources */,
 				8BE994B023F6C6C500E9B652 /* UserSettings.swift in Sources */,
+				8B91462E23FABAB0003E8923 /* GraphView.swift in Sources */,
 				8B8BE6BE23F3DA52005C7E1B /* SceneDelegate.swift in Sources */,
 				8BE994AC23F6BE5200E9B652 /* FancyTimer.swift in Sources */,
 				8B8BE6C023F3DA52005C7E1B /* ContentView.swift in Sources */,
