@@ -9,27 +9,24 @@
 import SwiftUI
 
 struct ModalView: View {
-    @State private var showModal: Bool = false
-    @State private var selectedFlag: String = ""
-    @State private var country: String = ""
     
-    let flags = ["🇹🇷","🇺🇸","🇯🇵","🇹🇷","🇺🇸","🇯🇵","🇹🇷","🇺🇸","🇯🇵"]
+    @State private var flagViewModel: FlagViewModel = FlagViewModel()
     
     var body: some View {
         List {
-            Text(self.country)
-            ForEach(0..<flags.count) { index in
+            Text(flagViewModel.country)
+            ForEach(flagViewModel.flags, id: \.self) { flag in
                 HStack {
-                    Text(self.flags[index]).font(.custom("Arial", size: 48))
-                    Text("Bayrak \(index)")
+                    Text(flag).font(.custom("Arial", size: 64))
+                    Spacer()
                 }.onTapGesture {
-                    self.showModal.toggle()
-                    self.selectedFlag = self.flags[index]
+                    self.flagViewModel.flag = flag
+                    self.flagViewModel.showModel.toggle()
                 }
             }
         }
-        .sheet(isPresented: $showModal) {
-            FlagDetailView(flag: self.selectedFlag, country: self.$country, showModal: self.$showModal)
+        .sheet(isPresented: $flagViewModel.showModel) {
+            FlagDetailView(flagViewModel: self.$flagViewModel)
         }
     }
 }

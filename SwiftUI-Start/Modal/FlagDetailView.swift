@@ -9,17 +9,16 @@
 import SwiftUI
 
 struct FlagDetailView: View {
-    let flag: String
-    @Binding var country: String
-    @Binding var showModal: Bool
+    @Binding var flagViewModel: FlagViewModel
+    
     var body: some View {
         VStack {
-            Text(flag).font(.custom("Arial", size: 200))
-            TextField("Enter country name", text: $country)
+            Text(flagViewModel.flag).font(.custom("Arial", size: 200))
+            TextField("Enter country name", text: $flagViewModel.country)
                 .padding()
                 .fixedSize()
             Button("Submit") {
-                self.showModal.toggle()
+                self.flagViewModel.showModel.toggle()
             }
         }
     }
@@ -27,6 +26,6 @@ struct FlagDetailView: View {
 
 struct FlagDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FlagDetailView(flag: "TR", country: .constant(""), showModal: .constant(false))
+        FlagDetailView(flagViewModel: .constant(FlagViewModel()))
     }
 }
