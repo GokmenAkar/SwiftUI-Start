@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B0BC06F23FC0BED00D5D583 /* FlagDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BC06E23FC0BED00D5D583 /* FlagDetailView.swift */; };
 		8B3A37B923F40D5900F933DB /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A37B823F40D5900F933DB /* HikeDetail.swift */; };
 		8B3A37BD23F4256E00F933DB /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A37BC23F4256E00F933DB /* GridView.swift */; };
 		8B3A37C123F4283900F933DB /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A37C023F4283900F933DB /* Array+Extensions.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B0BC06E23FC0BED00D5D583 /* FlagDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailView.swift; sourceTree = "<group>"; };
 		8B3A37B823F40D5900F933DB /* HikeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		8B3A37BC23F4256E00F933DB /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		8B3A37C023F4283900F933DB /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				8B5335AC23FBD7BF00C4B5F3 /* ModalView.swift */,
+				8B0BC06E23FC0BED00D5D583 /* FlagDetailView.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				8B3A37C323F4299600F933DB /* Car.swift in Sources */,
 				8BE994A923F6B19400E9B652 /* PlayButton.swift in Sources */,
 				8B5335A823FBC7F800C4B5F3 /* FormView.swift in Sources */,
+				8B0BC06F23FC0BED00D5D583 /* FlagDetailView.swift in Sources */,
 				8BE994B023F6C6C500E9B652 /* UserSettings.swift in Sources */,
 				8B91462E23FABAB0003E8923 /* GraphView.swift in Sources */,
 				8B8BE6BE23F3DA52005C7E1B /* SceneDelegate.swift in Sources */,

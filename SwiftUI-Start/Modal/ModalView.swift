@@ -11,11 +11,13 @@ import SwiftUI
 struct ModalView: View {
     @State private var showModal: Bool = false
     @State private var selectedFlag: String = ""
+    @State private var country: String = ""
     
     let flags = ["🇹🇷","🇺🇸","🇯🇵","🇹🇷","🇺🇸","🇯🇵","🇹🇷","🇺🇸","🇯🇵"]
     
     var body: some View {
         List {
+            Text(self.country)
             ForEach(0..<flags.count) { index in
                 HStack {
                     Text(self.flags[index]).font(.custom("Arial", size: 48))
@@ -27,10 +29,7 @@ struct ModalView: View {
             }
         }
         .sheet(isPresented: $showModal) {
-            HStack {
-                Text("Selected Flag")
-                Text(self.selectedFlag).font(.custom("Arial", size: 56))
-            }
+            FlagDetailView(flag: self.selectedFlag, country: self.$country, showModal: self.$showModal)
         }
     }
 }
