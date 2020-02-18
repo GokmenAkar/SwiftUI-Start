@@ -13,6 +13,7 @@ struct GestureView: View {
     @State private var tapped: Bool = false
     @State private var cardDragState: CGSize = .zero
     @State private var cardRotateState: Double = 0
+    
     var body: some View {
         CardView(tapped: $tapped)
             .offset(y: self.cardDragState.height)
