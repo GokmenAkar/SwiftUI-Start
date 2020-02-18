@@ -13,6 +13,7 @@
 		8B3A37C323F4299600F933DB /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A37C223F4299600F933DB /* Car.swift */; };
 		8B5335A823FBC7F800C4B5F3 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5335A723FBC7F800C4B5F3 /* FormView.swift */; };
 		8B5335AA23FBCC7500C4B5F3 /* NotificationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5335A923FBCC7500C4B5F3 /* NotificationFormView.swift */; };
+		8B5335AD23FBD7BF00C4B5F3 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5335AC23FBD7BF00C4B5F3 /* ModalView.swift */; };
 		8B8BE6BC23F3DA52005C7E1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8BE6BB23F3DA52005C7E1B /* AppDelegate.swift */; };
 		8B8BE6BE23F3DA52005C7E1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8BE6BD23F3DA52005C7E1B /* SceneDelegate.swift */; };
 		8B8BE6C023F3DA52005C7E1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8BE6BF23F3DA52005C7E1B /* ContentView.swift */; };
@@ -45,6 +46,7 @@
 		8B3A37C223F4299600F933DB /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		8B5335A723FBC7F800C4B5F3 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		8B5335A923FBCC7500C4B5F3 /* NotificationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFormView.swift; sourceTree = "<group>"; };
+		8B5335AC23FBD7BF00C4B5F3 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		8B8BE6B823F3DA52005C7E1B /* SwiftUI-Start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Start.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8BE6BB23F3DA52005C7E1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B8BE6BD23F3DA52005C7E1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 			path = Forms;
 			sourceTree = "<group>";
 		};
+		8B5335AB23FBD7B100C4B5F3 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				8B5335AC23FBD7BF00C4B5F3 /* ModalView.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
 		8B8BE6AF23F3DA52005C7E1B = {
 			isa = PBXGroup;
 			children = (
@@ -144,11 +154,12 @@
 				8BA71AFC23F52FD30012F385 /* States */,
 				8BA71B0623F551890012F385 /* Binding */,
 				8BE994AA23F6BE3C00E9B652 /* Observable */,
+				8BE994B123F6CCC200E9B652 /* Enviroment */,
 				8B91462C23FABA96003E8923 /* Graphics */,
 				8B91463323FAC757003E8923 /* Gestures */,
-				8B8BE6C923F3DA56005C7E1B /* Info.plist */,
 				8B5335A623FBC7EA00C4B5F3 /* Forms */,
-				8BE994B123F6CCC200E9B652 /* Enviroment */,
+				8B8BE6C923F3DA56005C7E1B /* Info.plist */,
+				8B5335AB23FBD7B100C4B5F3 /* Modal */,
 				8B8BE6C323F3DA56005C7E1B /* Preview Content */,
 			);
 			path = "SwiftUI-Start";
@@ -358,6 +369,7 @@
 				8B91463223FABF56003E8923 /* Report.swift in Sources */,
 				8BE994A623F6A2B700E9B652 /* Episode.swift in Sources */,
 				8BE994B323F6CCDC00E9B652 /* EnviromentView.swift in Sources */,
+				8B5335AD23FBD7BF00C4B5F3 /* ModalView.swift in Sources */,
 				8B3A37C323F4299600F933DB /* Car.swift in Sources */,
 				8BE994A923F6B19400E9B652 /* PlayButton.swift in Sources */,
 				8B5335A823FBC7F800C4B5F3 /* FormView.swift in Sources */,
