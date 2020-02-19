@@ -31,6 +31,9 @@
 		8BA71B0223F534870012F385 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA71B0123F534870012F385 /* Task.swift */; };
 		8BA71B0523F534D40012F385 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA71B0423F534D40012F385 /* ToDoListView.swift */; };
 		8BA71B0823F5519E0012F385 /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA71B0723F5519E0012F385 /* BindingView.swift */; };
+		8BB7AB7D23FD5A700001409F /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB7AB7C23FD5A700001409F /* CameraView.swift */; };
+		8BB7AB7F23FD5AB00001409F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB7AB7E23FD5AB00001409F /* ImagePicker.swift */; };
+		8BB7AB8123FD61540001409F /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB7AB8023FD61540001409F /* PhotoCaptureView.swift */; };
 		8BE994A623F6A2B700E9B652 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE994A523F6A2B700E9B652 /* Episode.swift */; };
 		8BE994A923F6B19400E9B652 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE994A823F6B19400E9B652 /* PlayButton.swift */; };
 		8BE994AC23F6BE5200E9B652 /* FancyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE994AB23F6BE5200E9B652 /* FancyTimer.swift */; };
@@ -68,6 +71,9 @@
 		8BA71B0123F534870012F385 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		8BA71B0423F534D40012F385 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
 		8BA71B0723F5519E0012F385 /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
+		8BB7AB7C23FD5A700001409F /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		8BB7AB7E23FD5AB00001409F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		8BB7AB8023FD61540001409F /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
 		8BE994A523F6A2B700E9B652 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		8BE994A823F6B19400E9B652 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		8BE994AB23F6BE5200E9B652 /* FancyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTimer.swift; sourceTree = "<group>"; };
@@ -164,8 +170,9 @@
 				8B91462C23FABA96003E8923 /* Graphics */,
 				8B91463323FAC757003E8923 /* Gestures */,
 				8B5335A623FBC7EA00C4B5F3 /* Forms */,
-				8B8BE6C923F3DA56005C7E1B /* Info.plist */,
 				8B5335AB23FBD7B100C4B5F3 /* Modal */,
+				8BB7AB7B23FD5A600001409F /* Camera */,
+				8B8BE6C923F3DA56005C7E1B /* Info.plist */,
 				8B8BE6C323F3DA56005C7E1B /* Preview Content */,
 			);
 			path = "SwiftUI-Start";
@@ -243,6 +250,16 @@
 				8BA71B0723F5519E0012F385 /* BindingView.swift */,
 			);
 			path = Binding;
+			sourceTree = "<group>";
+		};
+		8BB7AB7B23FD5A600001409F /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				8BB7AB7C23FD5A700001409F /* CameraView.swift */,
+				8BB7AB7E23FD5AB00001409F /* ImagePicker.swift */,
+				8BB7AB8023FD61540001409F /* PhotoCaptureView.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 		8BE994A423F6A2AA00E9B652 /* Models */ = {
@@ -363,12 +380,14 @@
 				8BF73DFD23F3F03300B3977B /* Hike.swift in Sources */,
 				8B8BE6BC23F3DA52005C7E1B /* AppDelegate.swift in Sources */,
 				8BA71AFF23F530030012F385 /* StateView.swift in Sources */,
+				8BB7AB7D23FD5A700001409F /* CameraView.swift in Sources */,
 				8BF73DFB23F3F02A00B3977B /* HikeView.swift in Sources */,
 				8BA71B0223F534870012F385 /* Task.swift in Sources */,
 				8B3A37C123F4283900F933DB /* Array+Extensions.swift in Sources */,
 				8B91463523FAC77C003E8923 /* GestureView.swift in Sources */,
 				8B3E8F2C23FC134400A53F14 /* FlagViewModel.swift in Sources */,
 				8B91463023FABAD1003E8923 /* BarGraph.swift in Sources */,
+				8BB7AB8123FD61540001409F /* PhotoCaptureView.swift in Sources */,
 				8BA71B0523F534D40012F385 /* ToDoListView.swift in Sources */,
 				8BE994AE23F6BEF900E9B652 /* FancyScoreView.swift in Sources */,
 				8B3A37BD23F4256E00F933DB /* GridView.swift in Sources */,
@@ -382,6 +401,7 @@
 				8B5335A823FBC7F800C4B5F3 /* FormView.swift in Sources */,
 				8B0BC06F23FC0BED00D5D583 /* FlagDetailView.swift in Sources */,
 				8BE994B023F6C6C500E9B652 /* UserSettings.swift in Sources */,
+				8BB7AB7F23FD5AB00001409F /* ImagePicker.swift in Sources */,
 				8B91462E23FABAB0003E8923 /* GraphView.swift in Sources */,
 				8B8BE6BE23F3DA52005C7E1B /* SceneDelegate.swift in Sources */,
 				8BE994AC23F6BE5200E9B652 /* FancyTimer.swift in Sources */,
