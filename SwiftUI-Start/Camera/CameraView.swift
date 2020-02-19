@@ -18,6 +18,7 @@ struct CameraView: View {
             
             image?.resizable().scaledToFit()
             
+            
             Button("Open Camera") {
                 self.showImagePicker = true
             }.padding()
