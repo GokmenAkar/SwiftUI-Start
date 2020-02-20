@@ -43,6 +43,7 @@
 		8BE994B023F6C6C500E9B652 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE994AF23F6C6C500E9B652 /* UserSettings.swift */; };
 		8BE994B323F6CCDC00E9B652 /* EnviromentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE994B223F6CCDC00E9B652 /* EnviromentView.swift */; };
 		8BEB3F1123FE861F008960FD /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB3F1023FE861F008960FD /* AnimationView.swift */; };
+		8BEB3F1323FE9986008960FD /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB3F1223FE9986008960FD /* NotificationView.swift */; };
 		8BF73DFB23F3F02A00B3977B /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF73DFA23F3F02A00B3977B /* HikeView.swift */; };
 		8BF73DFD23F3F03300B3977B /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF73DFC23F3F03300B3977B /* Hike.swift */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,7 @@
 		8BE994AF23F6C6C500E9B652 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		8BE994B223F6CCDC00E9B652 /* EnviromentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentView.swift; sourceTree = "<group>"; };
 		8BEB3F1023FE861F008960FD /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		8BEB3F1223FE9986008960FD /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		8BF73DFA23F3F02A00B3977B /* HikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
 		8BF73DFC23F3F03300B3977B /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -317,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				8BEB3F1023FE861F008960FD /* AnimationView.swift */,
+				8BEB3F1223FE9986008960FD /* NotificationView.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				8B91463723FAC799003E8923 /* CardView.swift in Sources */,
 				8B3A37B923F40D5900F933DB /* HikeDetail.swift in Sources */,
 				8B5335AA23FBCC7500C4B5F3 /* NotificationFormView.swift in Sources */,
+				8BEB3F1323FE9986008960FD /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
