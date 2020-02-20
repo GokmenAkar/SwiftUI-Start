@@ -15,7 +15,7 @@ struct SearchView: View {
     var body: some View {
         List {
             SearchBar(text: $searchTerm)
-            
+             
             ForEach(names.filter {
                 self.searchTerm.isEmpty ? true : $0.localizedCaseInsensitiveContains(self.searchTerm)
             }, id: \.self) { name in

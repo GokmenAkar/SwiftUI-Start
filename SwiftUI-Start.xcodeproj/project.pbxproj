@@ -42,6 +42,7 @@
 		8BE994AE23F6BEF900E9B652 /* FancyScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE994AD23F6BEF900E9B652 /* FancyScoreView.swift */; };
 		8BE994B023F6C6C500E9B652 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE994AF23F6C6C500E9B652 /* UserSettings.swift */; };
 		8BE994B323F6CCDC00E9B652 /* EnviromentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE994B223F6CCDC00E9B652 /* EnviromentView.swift */; };
+		8BEB3F1123FE861F008960FD /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB3F1023FE861F008960FD /* AnimationView.swift */; };
 		8BF73DFB23F3F02A00B3977B /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF73DFA23F3F02A00B3977B /* HikeView.swift */; };
 		8BF73DFD23F3F03300B3977B /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF73DFC23F3F03300B3977B /* Hike.swift */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,7 @@
 		8BE994AD23F6BEF900E9B652 /* FancyScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyScoreView.swift; sourceTree = "<group>"; };
 		8BE994AF23F6C6C500E9B652 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		8BE994B223F6CCDC00E9B652 /* EnviromentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentView.swift; sourceTree = "<group>"; };
+		8BEB3F1023FE861F008960FD /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		8BF73DFA23F3F02A00B3977B /* HikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
 		8BF73DFC23F3F03300B3977B /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +179,7 @@
 				8B5335AB23FBD7B100C4B5F3 /* Modal */,
 				8BB7AB7B23FD5A600001409F /* Camera */,
 				8BB7AB8223FD72370001409F /* Search */,
+				8BEB3F0F23FE860F008960FD /* Animations */,
 				8B8BE6C923F3DA56005C7E1B /* Info.plist */,
 				8B8BE6C323F3DA56005C7E1B /* Preview Content */,
 			);
@@ -310,6 +313,14 @@
 			path = Enviroment;
 			sourceTree = "<group>";
 		};
+		8BEB3F0F23FE860F008960FD /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				8BEB3F1023FE861F008960FD /* AnimationView.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		8BF73DFE23F3F0D500B3977B /* Hike */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +413,7 @@
 				8B3E8F2C23FC134400A53F14 /* FlagViewModel.swift in Sources */,
 				8B91463023FABAD1003E8923 /* BarGraph.swift in Sources */,
 				8BB7AB8423FD724A0001409F /* SearchView.swift in Sources */,
+				8BEB3F1123FE861F008960FD /* AnimationView.swift in Sources */,
 				8BB7AB8123FD61540001409F /* PhotoCaptureView.swift in Sources */,
 				8BA71B0523F534D40012F385 /* ToDoListView.swift in Sources */,
 				8BE994AE23F6BEF900E9B652 /* FancyScoreView.swift in Sources */,

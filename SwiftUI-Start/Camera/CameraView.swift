@@ -15,9 +15,7 @@ struct CameraView: View {
     
     var body: some View {
         VStack {
-            
             image?.resizable().scaledToFit()
-            
             
             Button("Open Camera") {
                 self.showImagePicker = true
