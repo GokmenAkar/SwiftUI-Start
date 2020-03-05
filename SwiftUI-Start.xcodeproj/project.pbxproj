@@ -46,6 +46,7 @@
 		8BEB3F1323FE9986008960FD /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB3F1223FE9986008960FD /* NotificationView.swift */; };
 		8BF73DFB23F3F02A00B3977B /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF73DFA23F3F02A00B3977B /* HikeView.swift */; };
 		8BF73DFD23F3F03300B3977B /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF73DFC23F3F03300B3977B /* Hike.swift */; };
+		8BFC4E5724096085000D2315 /* BaseTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC4E5624096085000D2315 /* BaseTabbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		8BEB3F1223FE9986008960FD /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		8BF73DFA23F3F02A00B3977B /* HikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
 		8BF73DFC23F3F03300B3977B /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
+		8BFC4E5624096085000D2315 /* BaseTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				8BB7AB8223FD72370001409F /* Search */,
 				8BEB3F0F23FE860F008960FD /* Animations */,
 				8B8BE6C923F3DA56005C7E1B /* Info.plist */,
+				8BFC4E5524096065000D2315 /* Tabbar */,
 				8B8BE6C323F3DA56005C7E1B /* Preview Content */,
 			);
 			path = "SwiftUI-Start";
@@ -334,6 +337,14 @@
 			path = Hike;
 			sourceTree = "<group>";
 		};
+		8BFC4E5524096065000D2315 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				8BFC4E5624096085000D2315 /* BaseTabbar.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -421,6 +432,7 @@
 				8BA71B0523F534D40012F385 /* ToDoListView.swift in Sources */,
 				8BE994AE23F6BEF900E9B652 /* FancyScoreView.swift in Sources */,
 				8B3A37BD23F4256E00F933DB /* GridView.swift in Sources */,
+				8BFC4E5724096085000D2315 /* BaseTabbar.swift in Sources */,
 				8BB7AB8623FD72970001409F /* SearchBar.swift in Sources */,
 				8BA71B0823F5519E0012F385 /* BindingView.swift in Sources */,
 				8B91463223FABF56003E8923 /* Report.swift in Sources */,

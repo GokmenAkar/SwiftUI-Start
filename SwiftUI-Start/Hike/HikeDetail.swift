@@ -27,11 +27,23 @@ struct HikeDetail: View {
                     withAnimation {
                         self.zoomed.toggle()
                     }
-                    
             }
             
             Text(hike.name)
             Text(String(format: "%.2f Miles", hike.miles))
+            
+            Button(action: {
+                
+            }) {
+                Image(systemName: "circle.grid.hex.fill")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .padding()
+            }
+            .background(Circle())
+            .foregroundColor(.purple)
+            .accentColor(.white)
+            
         }.navigationBarTitle(Text(hike.name), displayMode: .inline)
     }
 }
