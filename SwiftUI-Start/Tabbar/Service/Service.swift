@@ -30,9 +30,8 @@ class Service {
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { [weak self] (completion) in
                 self?.message = try? completion.error().localizedDescription
-                print(self?.message ?? "")
-                }, receiveValue: { (users) in
-                    print(users)
+                }, receiveValue: { (response) in
+                    completion(response, nil)
             })
     }
 }
