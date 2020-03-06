@@ -9,19 +9,19 @@
 import SwiftUI
 
 struct UserView: View {
+    
+    @Binding var user: User
+    
     var body: some View {
-        Text("Hello world")
-            .onAppear {
-                let request = ArticleRequest()
-                Service.shared.getRequest(request: request) { (users, error) in
-                    print(users, error)
-                }
+        VStack {
+            Text("")
         }
     }
 }
 
 struct UserView_Previews: PreviewProvider {
     static var previews: some View {
-        UserView()
+        UserView(user: .constant(User.testUser()))
+        
     }
 }

@@ -12,7 +12,7 @@ import Combine
 class Service {
     static let shared = Service()
     
-    let api = "https://poised-echinacea-q201xlcpzr.glitch.me/top-news"
+    let api = "https://jsonplaceholder.typicode.com/users"
     
     var cancellable: AnyCancellable?
     @Published var message: String? = ""
@@ -21,7 +21,7 @@ class Service {
         
     }
     
-    func getRequest<T: Codable>(request: BaseServiceRequest<T>,completion: @escaping ([T]?, Error?) -> Void) {
+    func getRequest<T: Codable>(request: BaseServiceRequest<T>,completion: @escaping (T?, Error?) -> Void) {
         let url: URL = URL(string: api)!
         let request = URLRequest(url: url)
         cancellable = URLSession.shared.dataTaskPublisher(for: request)
@@ -31,8 +31,8 @@ class Service {
             .sink(receiveCompletion: { [weak self] (completion) in
                 self?.message = try? completion.error().localizedDescription
                 print(self?.message ?? "")
-                }, receiveValue: { (response) in
-                    print(response)
+                }, receiveValue: { (users) in
+                    print(users)
             })
     }
 }
