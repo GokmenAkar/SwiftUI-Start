@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct HikeDetail: View {
+  struct HikeDetail: View {
     var hike: Hike
     
     @State private var zoomed: Bool = false
