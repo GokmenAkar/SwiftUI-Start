@@ -62,6 +62,12 @@
 		B311A0EE2414FC8F00DFB5FE /* MarketRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0ED2414FC8F00DFB5FE /* MarketRequest.swift */; };
 		B311A0F12414FFF300DFB5FE /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0F02414FFF300DFB5FE /* LineView.swift */; };
 		B311A0F32415021B00DFB5FE /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0F22415021B00DFB5FE /* Line.swift */; };
+		B3A25BE2241572AF00DF5930 /* ProgressShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BE1241572AF00DF5930 /* ProgressShape.swift */; };
+		B3A25BE5241574DD00DF5930 /* BarChartDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BE4241574DD00DF5930 /* BarChartDataModels.swift */; };
+		B3A25BE72415763500DF5930 /* BarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BE62415763500DF5930 /* BarsView.swift */; };
+		B3A25BE92415804200DF5930 /* LegendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BE82415804200DF5930 /* LegendView.swift */; };
+		B3A25BEB2415822D00DF5930 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BEA2415822D00DF5930 /* BarChartView.swift */; };
+		B3A25BED2415831100DF5930 /* LabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BEC2415831100DF5930 /* LabelsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +128,12 @@
 		B311A0ED2414FC8F00DFB5FE /* MarketRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketRequest.swift; sourceTree = "<group>"; };
 		B311A0F02414FFF300DFB5FE /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		B311A0F22415021B00DFB5FE /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		B3A25BE1241572AF00DF5930 /* ProgressShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressShape.swift; sourceTree = "<group>"; };
+		B3A25BE4241574DD00DF5930 /* BarChartDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartDataModels.swift; sourceTree = "<group>"; };
+		B3A25BE62415763500DF5930 /* BarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsView.swift; sourceTree = "<group>"; };
+		B3A25BE82415804200DF5930 /* LegendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendView.swift; sourceTree = "<group>"; };
+		B3A25BEA2415822D00DF5930 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		B3A25BEC2415831100DF5930 /* LabelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +268,7 @@
 				8BB7AB8223FD72370001409F /* Search */,
 				8BEB3F0F23FE860F008960FD /* Animations */,
 				8B8BE6C923F3DA56005C7E1B /* Info.plist */,
+				B3A25BE0241572A400DF5930 /* Shapes */,
 				B311A0E22414ECC600DFB5FE /* Neumorphism */,
 				8BFC4E5524096065000D2315 /* Tabbar */,
 				8B7B9CAE24127D56002E5B8B /* Combine */,
@@ -455,6 +468,27 @@
 			path = LineView;
 			sourceTree = "<group>";
 		};
+		B3A25BE0241572A400DF5930 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				B3A25BE3241574C500DF5930 /* BarCharDataModels */,
+				B3A25BE1241572AF00DF5930 /* ProgressShape.swift */,
+				B3A25BE62415763500DF5930 /* BarsView.swift */,
+				B3A25BE82415804200DF5930 /* LegendView.swift */,
+				B3A25BEC2415831100DF5930 /* LabelsView.swift */,
+				B3A25BEA2415822D00DF5930 /* BarChartView.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		B3A25BE3241574C500DF5930 /* BarCharDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				B3A25BE4241574DD00DF5930 /* BarChartDataModels.swift */,
+			);
+			path = BarCharDataModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -531,6 +565,7 @@
 				8BF73DFD23F3F03300B3977B /* Hike.swift in Sources */,
 				8B8BE6BC23F3DA52005C7E1B /* AppDelegate.swift in Sources */,
 				8BA71AFF23F530030012F385 /* StateView.swift in Sources */,
+				B3A25BE92415804200DF5930 /* LegendView.swift in Sources */,
 				8BB7AB7D23FD5A700001409F /* CameraView.swift in Sources */,
 				8BF73DFB23F3F02A00B3977B /* HikeView.swift in Sources */,
 				8BA71B0223F534870012F385 /* Task.swift in Sources */,
@@ -538,18 +573,23 @@
 				B311A0EC2414FC8700DFB5FE /* MarketViewModel.swift in Sources */,
 				8B3A37C123F4283900F933DB /* Array+Extensions.swift in Sources */,
 				8B91463523FAC77C003E8923 /* GestureView.swift in Sources */,
+				B3A25BE5241574DD00DF5930 /* BarChartDataModels.swift in Sources */,
 				8B3E8F2C23FC134400A53F14 /* FlagViewModel.swift in Sources */,
 				8B91463023FABAD1003E8923 /* BarGraph.swift in Sources */,
 				8BB7AB8423FD724A0001409F /* SearchView.swift in Sources */,
 				8BEB3F1123FE861F008960FD /* AnimationView.swift in Sources */,
 				8BB7AB8123FD61540001409F /* PhotoCaptureView.swift in Sources */,
 				8BA71B0523F534D40012F385 /* ToDoListView.swift in Sources */,
+				B3A25BEB2415822D00DF5930 /* BarChartView.swift in Sources */,
 				8BE994AE23F6BEF900E9B652 /* FancyScoreView.swift in Sources */,
+				B3A25BE2241572AF00DF5930 /* ProgressShape.swift in Sources */,
 				8B3A37BD23F4256E00F933DB /* GridView.swift in Sources */,
 				8BFC4E5724096085000D2315 /* BaseTabbar.swift in Sources */,
 				8BB7AB8623FD72970001409F /* SearchBar.swift in Sources */,
 				8BA71B0823F5519E0012F385 /* BindingView.swift in Sources */,
+				B3A25BED2415831100DF5930 /* LabelsView.swift in Sources */,
 				8B91463223FABF56003E8923 /* Report.swift in Sources */,
+				B3A25BE72415763500DF5930 /* BarsView.swift in Sources */,
 				8BE994A623F6A2B700E9B652 /* Episode.swift in Sources */,
 				B311A0EE2414FC8F00DFB5FE /* MarketRequest.swift in Sources */,
 				8BE994B323F6CCDC00E9B652 /* EnviromentView.swift in Sources */,
