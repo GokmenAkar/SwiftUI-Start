@@ -55,6 +55,7 @@
 		8BF73DFB23F3F02A00B3977B /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF73DFA23F3F02A00B3977B /* HikeView.swift */; };
 		8BF73DFD23F3F03300B3977B /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF73DFC23F3F03300B3977B /* Hike.swift */; };
 		8BFC4E5724096085000D2315 /* BaseTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC4E5624096085000D2315 /* BaseTabbar.swift */; };
+		B311A0E42414ECD500DFB5FE /* NeumorphismView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0E32414ECD500DFB5FE /* NeumorphismView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +109,7 @@
 		8BF73DFA23F3F02A00B3977B /* HikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
 		8BF73DFC23F3F03300B3977B /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 		8BFC4E5624096085000D2315 /* BaseTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabbar.swift; sourceTree = "<group>"; };
+		B311A0E32414ECD500DFB5FE /* NeumorphismView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 				8BB7AB8223FD72370001409F /* Search */,
 				8BEB3F0F23FE860F008960FD /* Animations */,
 				8B8BE6C923F3DA56005C7E1B /* Info.plist */,
+				B311A0E22414ECC600DFB5FE /* Neumorphism */,
 				8BFC4E5524096065000D2315 /* Tabbar */,
 				8B7B9CAE24127D56002E5B8B /* Combine */,
 				8B8BE6C323F3DA56005C7E1B /* Preview Content */,
@@ -402,6 +405,14 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
+		B311A0E22414ECC600DFB5FE /* Neumorphism */ = {
+			isa = PBXGroup;
+			children = (
+				B311A0E32414ECD500DFB5FE /* NeumorphismView.swift */,
+			);
+			path = Neumorphism;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -473,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B311A0E42414ECD500DFB5FE /* NeumorphismView.swift in Sources */,
 				8B7B9CBF241283C7002E5B8B /* Article.swift in Sources */,
 				8BF73DFD23F3F03300B3977B /* Hike.swift in Sources */,
 				8B8BE6BC23F3DA52005C7E1B /* AppDelegate.swift in Sources */,
