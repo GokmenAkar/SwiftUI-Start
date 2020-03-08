@@ -15,7 +15,7 @@ struct UserListView: View {
     var body: some View {
         NavigationView {
             List(users, id: \.id) { user in
-                NavigationLink(destination: UserView(user: user)) {
+                NavigationLink(destination: MarketView()) {
                     UserView(user: user)
                 }
             }

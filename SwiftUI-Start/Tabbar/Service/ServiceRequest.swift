@@ -9,5 +9,7 @@
 import Foundation
 
 class BaseServiceRequest<T: Codable> {
-    
+    var baseURL: String {
+        return "https://jsonplaceholder.typicode.com/users" 
+    }
 }

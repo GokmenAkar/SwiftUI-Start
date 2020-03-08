@@ -12,8 +12,6 @@ import Combine
 class Service {
     static let shared = Service()
     
-    let api = "https://jsonplaceholder.typicode.com/users"
-    
     var cancellable: AnyCancellable?
     @Published var message: String? = ""
     
@@ -22,7 +20,7 @@ class Service {
     }
     
     func getRequest<T: Codable>(request: BaseServiceRequest<T>,completion: @escaping (T?, Error?) -> Void) {
-        let url: URL = URL(string: api)!
+        let url: URL = URL(string: request.baseURL)!
         let request = URLRequest(url: url)
         cancellable = URLSession.shared.dataTaskPublisher(for: request)
             .map(\.data)
@@ -33,6 +31,8 @@ class Service {
                 }, receiveValue: { (response) in
                     completion(response, nil)
             })
+        
+        
     }
 }
 

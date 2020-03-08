@@ -56,6 +56,12 @@
 		8BF73DFD23F3F03300B3977B /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF73DFC23F3F03300B3977B /* Hike.swift */; };
 		8BFC4E5724096085000D2315 /* BaseTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC4E5624096085000D2315 /* BaseTabbar.swift */; };
 		B311A0E42414ECD500DFB5FE /* NeumorphismView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0E32414ECD500DFB5FE /* NeumorphismView.swift */; };
+		B311A0E72414F3E800DFB5FE /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0E62414F3E800DFB5FE /* MarketView.swift */; };
+		B311A0E92414FB4D00DFB5FE /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0E82414FB4D00DFB5FE /* StockModel.swift */; };
+		B311A0EC2414FC8700DFB5FE /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0EB2414FC8700DFB5FE /* MarketViewModel.swift */; };
+		B311A0EE2414FC8F00DFB5FE /* MarketRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0ED2414FC8F00DFB5FE /* MarketRequest.swift */; };
+		B311A0F12414FFF300DFB5FE /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0F02414FFF300DFB5FE /* LineView.swift */; };
+		B311A0F32415021B00DFB5FE /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0F22415021B00DFB5FE /* Line.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +116,12 @@
 		8BF73DFC23F3F03300B3977B /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 		8BFC4E5624096085000D2315 /* BaseTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabbar.swift; sourceTree = "<group>"; };
 		B311A0E32414ECD500DFB5FE /* NeumorphismView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismView.swift; sourceTree = "<group>"; };
+		B311A0E62414F3E800DFB5FE /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+		B311A0E82414FB4D00DFB5FE /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
+		B311A0EB2414FC8700DFB5FE /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
+		B311A0ED2414FC8F00DFB5FE /* MarketRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketRequest.swift; sourceTree = "<group>"; };
+		B311A0F02414FFF300DFB5FE /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		B311A0F22415021B00DFB5FE /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				8B7B9CB9241281ED002E5B8B /* Service */,
+				B311A0E52414F3D500DFB5FE /* MarketLineChart */,
 				8B7B9CBA241281F5002E5B8B /* UserModel */,
 				8B7B9CBB241283A8002E5B8B /* ArticleModel */,
 				8B7B9CB324128159002E5B8B /* UserListView.swift */,
@@ -413,6 +426,35 @@
 			path = Neumorphism;
 			sourceTree = "<group>";
 		};
+		B311A0E52414F3D500DFB5FE /* MarketLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				B311A0EF2414FFE900DFB5FE /* LineView */,
+				B311A0EA2414FC7E00DFB5FE /* MarketViewModel */,
+				B311A0E62414F3E800DFB5FE /* MarketView.swift */,
+				B311A0E82414FB4D00DFB5FE /* StockModel.swift */,
+			);
+			path = MarketLineChart;
+			sourceTree = "<group>";
+		};
+		B311A0EA2414FC7E00DFB5FE /* MarketViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B311A0EB2414FC8700DFB5FE /* MarketViewModel.swift */,
+				B311A0ED2414FC8F00DFB5FE /* MarketRequest.swift */,
+			);
+			path = MarketViewModel;
+			sourceTree = "<group>";
+		};
+		B311A0EF2414FFE900DFB5FE /* LineView */ = {
+			isa = PBXGroup;
+			children = (
+				B311A0F02414FFF300DFB5FE /* LineView.swift */,
+				B311A0F22415021B00DFB5FE /* Line.swift */,
+			);
+			path = LineView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -493,6 +535,7 @@
 				8BF73DFB23F3F02A00B3977B /* HikeView.swift in Sources */,
 				8BA71B0223F534870012F385 /* Task.swift in Sources */,
 				8B7B9CC124128725002E5B8B /* UserView.swift in Sources */,
+				B311A0EC2414FC8700DFB5FE /* MarketViewModel.swift in Sources */,
 				8B3A37C123F4283900F933DB /* Array+Extensions.swift in Sources */,
 				8B91463523FAC77C003E8923 /* GestureView.swift in Sources */,
 				8B3E8F2C23FC134400A53F14 /* FlagViewModel.swift in Sources */,
@@ -508,14 +551,18 @@
 				8BA71B0823F5519E0012F385 /* BindingView.swift in Sources */,
 				8B91463223FABF56003E8923 /* Report.swift in Sources */,
 				8BE994A623F6A2B700E9B652 /* Episode.swift in Sources */,
+				B311A0EE2414FC8F00DFB5FE /* MarketRequest.swift in Sources */,
 				8BE994B323F6CCDC00E9B652 /* EnviromentView.swift in Sources */,
 				8B5335AD23FBD7BF00C4B5F3 /* ModalView.swift in Sources */,
 				8B3A37C323F4299600F933DB /* Car.swift in Sources */,
 				8BE994A923F6B19400E9B652 /* PlayButton.swift in Sources */,
 				8B7B9CB624128172002E5B8B /* UserRequest.swift in Sources */,
 				8B5335A823FBC7F800C4B5F3 /* FormView.swift in Sources */,
+				B311A0F12414FFF300DFB5FE /* LineView.swift in Sources */,
+				B311A0F32415021B00DFB5FE /* Line.swift in Sources */,
 				8B7B9CBD241283B7002E5B8B /* ArticleRequest.swift in Sources */,
 				8B7B9CB224127EB8002E5B8B /* User.swift in Sources */,
+				B311A0E92414FB4D00DFB5FE /* StockModel.swift in Sources */,
 				8B7B9CB424128159002E5B8B /* UserListView.swift in Sources */,
 				8B0BC06F23FC0BED00D5D583 /* FlagDetailView.swift in Sources */,
 				8BE994B023F6C6C500E9B652 /* UserSettings.swift in Sources */,
@@ -525,6 +572,7 @@
 				8B8BE6BE23F3DA52005C7E1B /* SceneDelegate.swift in Sources */,
 				8B7B9CB8241281B1002E5B8B /* ServiceRequest.swift in Sources */,
 				8BE994AC23F6BE5200E9B652 /* FancyTimer.swift in Sources */,
+				B311A0E72414F3E800DFB5FE /* MarketView.swift in Sources */,
 				8B8BE6C023F3DA52005C7E1B /* ContentView.swift in Sources */,
 				8B91463723FAC799003E8923 /* CardView.swift in Sources */,
 				8B3A37B923F40D5900F933DB /* HikeDetail.swift in Sources */,
