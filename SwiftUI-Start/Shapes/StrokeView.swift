@@ -15,6 +15,17 @@ struct StrokeView: View {
     var body: some View {
         ScrollView {
             VStack {
+                Button(action: {}) {
+                    Text("Rounded Button").bold().padding()
+                }
+                .background(RoundedRectangle(cornerRadius: 10).strokeBorder(Color.blue, lineWidth: 1))
+                Spacer()
+                Button(action: {}) {
+                    Text("Rounded Button").foregroundColor(Color.white).bold().padding()
+                }
+                .background(RoundedRectangle(cornerRadius: 10).fill(Color.blue))
+
+                
                 ZStack {
                     Rectangle().padding(20).foregroundColor(Color.yellow)
                     Rectangle().padding(40).foregroundColor(Color.red)
