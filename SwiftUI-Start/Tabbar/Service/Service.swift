@@ -31,8 +31,6 @@ class Service {
                 }, receiveValue: { (response) in
                     completion(response, nil)
             })
-        
-        
     }
 }
 

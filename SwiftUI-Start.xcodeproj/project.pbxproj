@@ -71,6 +71,7 @@
 		B3A25BE92415804200DF5930 /* LegendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BE82415804200DF5930 /* LegendView.swift */; };
 		B3A25BEB2415822D00DF5930 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BEA2415822D00DF5930 /* BarChartView.swift */; };
 		B3A25BED2415831100DF5930 /* LabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BEC2415831100DF5930 /* LabelsView.swift */; };
+		B3A2F4F724182B0F00A55304 /* LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A2F4F624182B0F00A55304 /* LinearGradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +141,7 @@
 		B3A25BE82415804200DF5930 /* LegendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendView.swift; sourceTree = "<group>"; };
 		B3A25BEA2415822D00DF5930 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		B3A25BEC2415831100DF5930 /* LabelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsView.swift; sourceTree = "<group>"; };
+		B3A2F4F624182B0F00A55304 /* LinearGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,7 +289,7 @@
 				8BB7AB8223FD72370001409F /* Search */,
 				8BEB3F0F23FE860F008960FD /* Animations */,
 				8B8BE6C923F3DA56005C7E1B /* Info.plist */,
-				8BD14110241677E60000954D /* AngularGradient */,
+				B3A2F4F424182AF900A55304 /* Gradient */,
 				8B8E0F5E24166D6000DDD2CC /* Insets */,
 				B3A25BE0241572A400DF5930 /* Shapes */,
 				B311A0E22414ECC600DFB5FE /* Neumorphism */,
@@ -522,6 +524,23 @@
 			path = BarCharDataModels;
 			sourceTree = "<group>";
 		};
+		B3A2F4F424182AF900A55304 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				B3A2F4F524182B0200A55304 /* LinearGradient */,
+				8BD14110241677E60000954D /* AngularGradient */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
+		B3A2F4F524182B0200A55304 /* LinearGradient */ = {
+			isa = PBXGroup;
+			children = (
+				B3A2F4F624182B0F00A55304 /* LinearGradient.swift */,
+			);
+			path = LinearGradient;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -615,6 +634,7 @@
 				8BB7AB8123FD61540001409F /* PhotoCaptureView.swift in Sources */,
 				8BA71B0523F534D40012F385 /* ToDoListView.swift in Sources */,
 				8BD1410F241672FA0000954D /* InsetViews.swift in Sources */,
+				B3A2F4F724182B0F00A55304 /* LinearGradient.swift in Sources */,
 				B3A25BEB2415822D00DF5930 /* BarChartView.swift in Sources */,
 				8BE994AE23F6BEF900E9B652 /* FancyScoreView.swift in Sources */,
 				B3A25BE2241572AF00DF5930 /* ProgressShape.swift in Sources */,
