@@ -7,21 +7,46 @@
 //
 
 import SwiftUI
-
+struct ActionSheetData: Identifiable {
+    var id = UUID()
+    let title: String
+    let message: String
+}
 struct ControlModifiersView: View {
     @State private var presentingActionSheet: Bool = false
+    @State private var actionSheetData: ActionSheetData? = nil
+    
     var body: some View {
         VStack {
-            Button("Show Action Sheet") {
-                self.presentingActionSheet.toggle()
+            
+            Text("You need to take some actions")
+            ActionSheetView(presentingActionSheet: $presentingActionSheet)
+            Text("Pass Data to Action Sheet")
+            Button("Pass") {
+                self.actionSheetData = ActionSheetData(title: "Options", message: "Choose an option:")
+            }.actionSheet(item: $actionSheetData) { actionSheetMessage in
+                ActionSheet(title: Text(actionSheetMessage.title))
             }
-            .actionSheet(isPresented: $presentingActionSheet) {
-                ActionSheet(title: Text("Action Sheet"), message: Text("Are you sure?"), buttons: [
-                    .default(Text("Continue")),
-                    .destructive(Text("Delete")),
-                    .cancel(Text("Close"))
-                    ])
-            }
+        }
+    }
+}
+
+struct ActionSheetView: View {
+    let title: String = "Actions"
+    let message: String = "Are you sure to continue?"
+    
+    @Binding var presentingActionSheet: Bool
+    
+    var body: some View {
+        Button("Show Actions") {
+            self.presentingActionSheet.toggle()
+        }
+        .actionSheet(isPresented: $presentingActionSheet) {
+            ActionSheet(title: Text("Actions"), message: Text("Are you sure to continue?"), buttons: [
+                .default(Text("Continue")),
+                .destructive(Text("Delete")),
+                .cancel(Text("Close"))
+            ])
         }
     }
 }
