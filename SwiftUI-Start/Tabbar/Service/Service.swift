@@ -15,9 +15,7 @@ class Service {
     var cancellable: AnyCancellable?
     @Published var message: String? = ""
     
-    private init() {
-        
-    }
+    private init() { }
     
     func getRequest<T: Codable>(request: BaseServiceRequest<T>,completion: @escaping (T?, Error?) -> Void) {
         let url: URL = URL(string: request.baseURL)!

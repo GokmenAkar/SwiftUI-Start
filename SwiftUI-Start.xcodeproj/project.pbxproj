@@ -65,6 +65,7 @@
 		B311A0EE2414FC8F00DFB5FE /* MarketRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0ED2414FC8F00DFB5FE /* MarketRequest.swift */; };
 		B311A0F12414FFF300DFB5FE /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0F02414FFF300DFB5FE /* LineView.swift */; };
 		B311A0F32415021B00DFB5FE /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0F22415021B00DFB5FE /* Line.swift */; };
+		B39AF53524197E5F00F5FF02 /* ControlModifiersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39AF53424197E5F00F5FF02 /* ControlModifiersView.swift */; };
 		B3A25BE2241572AF00DF5930 /* ProgressShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BE1241572AF00DF5930 /* ProgressShape.swift */; };
 		B3A25BE5241574DD00DF5930 /* BarChartDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BE4241574DD00DF5930 /* BarChartDataModels.swift */; };
 		B3A25BE72415763500DF5930 /* BarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BE62415763500DF5930 /* BarsView.swift */; };
@@ -135,6 +136,7 @@
 		B311A0ED2414FC8F00DFB5FE /* MarketRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketRequest.swift; sourceTree = "<group>"; };
 		B311A0F02414FFF300DFB5FE /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		B311A0F22415021B00DFB5FE /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		B39AF53424197E5F00F5FF02 /* ControlModifiersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlModifiersView.swift; sourceTree = "<group>"; };
 		B3A25BE1241572AF00DF5930 /* ProgressShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressShape.swift; sourceTree = "<group>"; };
 		B3A25BE4241574DD00DF5930 /* BarChartDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartDataModels.swift; sourceTree = "<group>"; };
 		B3A25BE62415763500DF5930 /* BarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsView.swift; sourceTree = "<group>"; };
@@ -272,9 +274,11 @@
 		8B8BE6BA23F3DA52005C7E1B /* SwiftUI-Start */ = {
 			isa = PBXGroup;
 			children = (
-				8BA71AFD23F52FE10012F385 /* Others */,
 				8B3A37BE23F4282B00F933DB /* Utils */,
+				8BA71AFD23F52FE10012F385 /* Others */,
 				8B8BE6BF23F3DA52005C7E1B /* ContentView.swift */,
+				8B8BE6C923F3DA56005C7E1B /* Info.plist */,
+				B39AF53324197E4500F5FF02 /* ControlModifiers */,
 				8BF73DFE23F3F0D500B3977B /* Hike */,
 				8B3A37BB23F424BE00F933DB /* Grid */,
 				8BA71AFC23F52FD30012F385 /* States */,
@@ -288,7 +292,6 @@
 				8BB7AB7B23FD5A600001409F /* Camera */,
 				8BB7AB8223FD72370001409F /* Search */,
 				8BEB3F0F23FE860F008960FD /* Animations */,
-				8B8BE6C923F3DA56005C7E1B /* Info.plist */,
 				B3A2F4F424182AF900A55304 /* Gradient */,
 				8B8E0F5E24166D6000DDD2CC /* Insets */,
 				B3A25BE0241572A400DF5930 /* Shapes */,
@@ -507,6 +510,14 @@
 			path = LineView;
 			sourceTree = "<group>";
 		};
+		B39AF53324197E4500F5FF02 /* ControlModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				B39AF53424197E5F00F5FF02 /* ControlModifiersView.swift */,
+			);
+			path = ControlModifiers;
+			sourceTree = "<group>";
+		};
 		B3A25BE0241572A400DF5930 /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
@@ -658,6 +669,7 @@
 				8B7B9CBD241283B7002E5B8B /* ArticleRequest.swift in Sources */,
 				8B7B9CB224127EB8002E5B8B /* User.swift in Sources */,
 				B311A0E92414FB4D00DFB5FE /* StockModel.swift in Sources */,
+				B39AF53524197E5F00F5FF02 /* ControlModifiersView.swift in Sources */,
 				8B7B9CB424128159002E5B8B /* UserListView.swift in Sources */,
 				8B0BC06F23FC0BED00D5D583 /* FlagDetailView.swift in Sources */,
 				8BE994B023F6C6C500E9B652 /* UserSettings.swift in Sources */,
