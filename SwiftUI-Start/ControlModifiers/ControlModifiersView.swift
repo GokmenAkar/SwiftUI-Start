@@ -16,10 +16,13 @@ struct ControlModifiersView: View {
     @State private var presentingActionSheet: Bool = false
     @State private var actionSheetData: ActionSheetData? = nil
     @State private var presentAlert: Bool = false
+    @State private var presentSheet: Bool = false
+    
     var body: some View {
         VStack {
             Text("You need to take some actions or pass data")
-            ActionSheetView(presentingActionSheet: $presentingActionSheet, actionSheetData: $actionSheetData)
+            ActionSheetView(presentingActionSheet: $presentingActionSheet,
+                            actionSheetData: $actionSheetData)
             Text("deyta: \(actionSheetData?.title ?? "data yok olm")")
             Text("Time for Alert")
             AlertHelperView(presentAlert: $presentAlert)
@@ -34,6 +37,8 @@ struct ActionSheetView: View {
     
     @Binding var presentingActionSheet: Bool
     @Binding var actionSheetData: ActionSheetData?
+    
+    @State var name: ActionSheetData? = nil
     
     var body: some View {
         VStack {
@@ -52,6 +57,12 @@ struct ActionSheetView: View {
                 self.actionSheetData = ActionSheetData(title: "Options", message: "Choose an option:")
             }.actionSheet(item: $actionSheetData) { actionSheetMessage in
                 ActionSheet(title: Text(actionSheetMessage.title))
+            }
+            
+            Button("Would you go to a sheet view?") {
+                self.name = ActionSheetData(title: "Gökmen", message: "Choose an option:")
+            }.sheet(item: $name) { data in
+                SheetHelperView(name: data.title)
             }
         }
     }
@@ -90,6 +101,21 @@ struct ContextMenuHelper: View {
                     Image(systemName: "circle.lefthalf.fill")
                     Text("Change constrast")
                 }
+            }
+        }
+    }
+}
+
+struct SheetHelperView: View {
+    @Environment(\.presentationMode) var presentation
+    
+    let name: String
+    
+    var body: some View {
+        VStack {
+            Text("Hello, this is a sheet view. \(name)")
+            Button("Now Dissmis Me") {
+                self.presentation.wrappedValue.dismiss()
             }
         }
     }
