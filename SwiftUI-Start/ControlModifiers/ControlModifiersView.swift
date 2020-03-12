@@ -17,16 +17,31 @@ struct ControlModifiersView: View {
     @State private var actionSheetData: ActionSheetData? = nil
     @State private var presentAlert: Bool = false
     @State private var presentSheet: Bool = false
-    
+
+    @State private var customPopup: Bool   = false
+    @State private var showStatusBar: Bool = false
     var body: some View {
-        VStack {
-            Text("You need to take some actions or pass data")
-            ActionSheetView(presentingActionSheet: $presentingActionSheet,
-                            actionSheetData: $actionSheetData)
-            Text("deyta: \(actionSheetData?.title ?? "data yok olm")")
-            Text("Time for Alert")
-            AlertHelperView(presentAlert: $presentAlert)
-            ContextMenuHelper()
+        ZStack {
+            VStack {
+                Text("You need to take some actions or pass data")
+                ActionSheetView(presentingActionSheet: $presentingActionSheet,
+                                actionSheetData: $actionSheetData)
+                Text("deyta: \(actionSheetData?.title ?? "data yok olm")")
+                Text("Time for Alert")
+                AlertHelperView(presentAlert: $presentAlert)
+                ContextMenuHelper()
+                
+                Button("Show custom popup") {
+                    self.customPopup.toggle()
+                }
+                
+                Button("Show/Hide status bar") {
+                    self.showStatusBar.toggle()
+                }
+            }.statusBar(hidden: showStatusBar)
+            if $customPopup.wrappedValue {
+                CustomPopupView(showingModal: $customPopup)
+            }
         }
     }
 }
@@ -91,17 +106,17 @@ struct ContextMenuHelper: View {
             .font(.title)
             .foregroundColor(.orange)
             .frame(width: 44, height: 44)
-        .contextMenu {
-            Button(action: {}) {
-                Text("Add color")
-                Image(systemName: "eyedropper.full")
-            }
-            Button(action: {}) {
-                HStack {
-                    Image(systemName: "circle.lefthalf.fill")
-                    Text("Change constrast")
+            .contextMenu {
+                Button(action: {}) {
+                    Text("Add color")
+                    Image(systemName: "eyedropper.full")
                 }
-            }
+                Button(action: {}) {
+                    HStack {
+                        Image(systemName: "circle.lefthalf.fill")
+                        Text("Change constrast")
+                    }
+                }
         }
     }
 }
@@ -117,6 +132,33 @@ struct SheetHelperView: View {
             Button("Now Dissmis Me") {
                 self.presentation.wrappedValue.dismiss()
             }
+        }
+    }
+}
+
+struct CustomPopupView: View {
+    @Binding var showingModal: Bool
+    var body: some View {
+        ZStack {
+            Color.black
+                .opacity(0.4)
+                .edgesIgnoringSafeArea(.vertical)
+            VStack(spacing: 20) {
+                Text("Popup")
+                    .bold().padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.orange)
+                    .foregroundColor(Color.white)
+                Spacer()
+                Button(action: {
+                    self.showingModal = false
+                }) {
+                    Text("Close")
+                }.padding()
+            }
+            .frame(width: 300, height: 200)
+            .background(Color.white)
+            .cornerRadius(20).shadow(radius: 20)
         }
     }
 }
