@@ -41,7 +41,9 @@ struct AngularGradientView: View {
                         .padding()
                 }
                 .padding(.horizontal)
-                .background(Capsule().fill(angularGradient))
+                .background(
+                    Capsule().fill(angularGradient)
+                )
             }
         }.padding()
     }

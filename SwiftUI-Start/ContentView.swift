@@ -9,40 +9,48 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selectedItem: String = ""
-    let animals = ["g", "t", "c", "ho"]
-    
+    @State private var showShape: Bool = false
     var body: some View {
-        NavigationView {
-            VStack(alignment: .center) {
-                Picker(selection: $selectedItem, label: Text("Başlık")) {
-                    Text("1")
-                    Text("2")
-                    }.pickerStyle(SegmentedPickerStyle())
+        VStack(spacing: 32) {
+            
+            
+            HStack {
+                OrangeRectangle()
+                    .overlay(
+                        Text("Left Shape")
+                            .foregroundColor(.black)
+                )
                 
-                Text("hehe")
-                    .font(.largeTitle)
-                    .foregroundColor(.green)
-                Text("haha").font(.title)
-                    .foregroundColor(.yellow)
-                Text("tete")
-                    .foregroundColor(.red)
-                Text("rere")
-                    .underline(true, color: .blue)
-                Text("KIAFAN")
-                Image("kiafan")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(20)
-                    .padding(.all)
-                    .foregroundColor(.red)
-                    .border(Color.red, width: 4)
-                HStack {
-                    Text("evev")
-                    Text("hehe")
+                if showShape {
+                    OrangeRectangle()
+                        .overlay(
+                            Text("Right Shape")
+                    )
                 }
             }
+            
+            OrangeRectangle()
+            OrangeRectangle()
+            
+            Text("Gelibolu")
+                .foregroundColor(.white)
+                .padding(12)
+                .padding(.vertical, 0)
+                .background(
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(Color.purple))
+            
+            Button("show/hide") {
+                self.showShape.toggle()
+            }
+            .padding()
         }
+    }
+}
+
+struct OrangeRectangle: View {
+    var body: some View {
+        RoundedRectangle(cornerRadius: 20).foregroundColor(.yellow)
     }
 }
 

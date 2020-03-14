@@ -73,6 +73,7 @@
 		B3A25BEB2415822D00DF5930 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BEA2415822D00DF5930 /* BarChartView.swift */; };
 		B3A25BED2415831100DF5930 /* LabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BEC2415831100DF5930 /* LabelsView.swift */; };
 		B3A2F4F724182B0F00A55304 /* LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A2F4F624182B0F00A55304 /* LinearGradient.swift */; };
+		B3AA4423241CDD1600D2018A /* AspectRatio_Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AA4422241CDD1600D2018A /* AspectRatio_Intro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +145,7 @@
 		B3A25BEA2415822D00DF5930 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		B3A25BEC2415831100DF5930 /* LabelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsView.swift; sourceTree = "<group>"; };
 		B3A2F4F624182B0F00A55304 /* LinearGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradient.swift; sourceTree = "<group>"; };
+		B3AA4422241CDD1600D2018A /* AspectRatio_Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatio_Intro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +280,7 @@
 				8BA71AFD23F52FE10012F385 /* Others */,
 				8B8BE6BF23F3DA52005C7E1B /* ContentView.swift */,
 				8B8BE6C923F3DA56005C7E1B /* Info.plist */,
+				B3AA4421241CDD0700D2018A /* AspectRatio */,
 				B39AF53324197E4500F5FF02 /* ControlModifiers */,
 				8BF73DFE23F3F0D500B3977B /* Hike */,
 				8B3A37BB23F424BE00F933DB /* Grid */,
@@ -552,6 +555,14 @@
 			path = LinearGradient;
 			sourceTree = "<group>";
 		};
+		B3AA4421241CDD0700D2018A /* AspectRatio */ = {
+			isa = PBXGroup;
+			children = (
+				B3AA4422241CDD1600D2018A /* AspectRatio_Intro.swift */,
+			);
+			path = AspectRatio;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -683,6 +694,7 @@
 				B311A0E72414F3E800DFB5FE /* MarketView.swift in Sources */,
 				8B8BE6C023F3DA52005C7E1B /* ContentView.swift in Sources */,
 				8B91463723FAC799003E8923 /* CardView.swift in Sources */,
+				B3AA4423241CDD1600D2018A /* AspectRatio_Intro.swift in Sources */,
 				8B3A37B923F40D5900F933DB /* HikeDetail.swift in Sources */,
 				8B5335AA23FBCC7500C4B5F3 /* NotificationFormView.swift in Sources */,
 				8BEB3F1323FE9986008960FD /* NotificationView.swift in Sources */,
