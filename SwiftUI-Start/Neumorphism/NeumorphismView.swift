@@ -9,13 +9,30 @@
 import SwiftUI
 
 struct NeumorphismView: View {
+    @State private var applyEffect: Bool = false
     var body: some View {
-        ZStack {
-            Rectangle()
-                .fill(Color("BackgroundColor"))
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .edgesIgnoringSafeArea(.all)
-            NeuContentView()
+        VStack {
+            ZStack {
+                Rectangle()
+                    .fill(Color("BackgroundColor"))
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .edgesIgnoringSafeArea(.all)
+                NeuContentView()
+                Image(systemName: "paperplane.fill")
+                    
+                    
+                    .transformEffect(applyEffect ? CGAffineTransform(translationX: 140, y: -140) : .identity)
+                    .transformEffect(CGAffineTransform(rotationAngle: applyEffect ? 45 : 0))
+            }
+            HStack {
+                Button("Apply Effect") {
+                    self.applyEffect = true
+                }
+                
+                Button("Remove Effect") {
+                    self.applyEffect = false
+                }
+            }
         }
     }
 }

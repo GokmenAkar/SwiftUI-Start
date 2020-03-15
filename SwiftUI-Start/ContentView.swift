@@ -11,26 +11,27 @@ import SwiftUI
 struct ContentView: View {
     @State private var showShape: Bool = false
     var body: some View {
-        VStack(spacing: 32) {
+        VStack(spacing: 12) {
             
             
             HStack {
-                OrangeRectangle()
+                OrangeRectangle(color: .red)
                     .overlay(
                         Text("Left Shape")
                             .foregroundColor(.black)
                 )
                 
                 if showShape {
-                    OrangeRectangle()
+                    OrangeRectangle(color: .yellow)
                         .overlay(
                             Text("Right Shape")
                     )
                 }
             }
             
-            OrangeRectangle()
-            OrangeRectangle()
+            OrangeRectangle(color: .gray).padding(.horizontal, 50).zIndex(1)
+            OrangeRectangle(color: .purple).scaleEffect(1.5).padding(.horizontal, 50)
+            OrangeRectangle(color: .gray).padding(.horizontal, 50)
             
             Text("Gelibolu")
                 .foregroundColor(.white)
@@ -49,8 +50,9 @@ struct ContentView: View {
 }
 
 struct OrangeRectangle: View {
+    let color: Color
     var body: some View {
-        RoundedRectangle(cornerRadius: 20).foregroundColor(.yellow)
+        RoundedRectangle(cornerRadius: 20).foregroundColor(color)
     }
 }
 
