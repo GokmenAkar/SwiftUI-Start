@@ -65,6 +65,7 @@
 		B311A0EE2414FC8F00DFB5FE /* MarketRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0ED2414FC8F00DFB5FE /* MarketRequest.swift */; };
 		B311A0F12414FFF300DFB5FE /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0F02414FFF300DFB5FE /* LineView.swift */; };
 		B311A0F32415021B00DFB5FE /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311A0F22415021B00DFB5FE /* Line.swift */; };
+		B368CD2F2422B6EC002F1D7C /* ModifiersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B368CD2E2422B6EC002F1D7C /* ModifiersView.swift */; };
 		B39AF53524197E5F00F5FF02 /* ControlModifiersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39AF53424197E5F00F5FF02 /* ControlModifiersView.swift */; };
 		B3A25BE2241572AF00DF5930 /* ProgressShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BE1241572AF00DF5930 /* ProgressShape.swift */; };
 		B3A25BE5241574DD00DF5930 /* BarChartDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A25BE4241574DD00DF5930 /* BarChartDataModels.swift */; };
@@ -142,6 +143,7 @@
 		B311A0ED2414FC8F00DFB5FE /* MarketRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketRequest.swift; sourceTree = "<group>"; };
 		B311A0F02414FFF300DFB5FE /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		B311A0F22415021B00DFB5FE /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		B368CD2E2422B6EC002F1D7C /* ModifiersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiersView.swift; sourceTree = "<group>"; };
 		B39AF53424197E5F00F5FF02 /* ControlModifiersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlModifiersView.swift; sourceTree = "<group>"; };
 		B3A25BE1241572AF00DF5930 /* ProgressShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressShape.swift; sourceTree = "<group>"; };
 		B3A25BE4241574DD00DF5930 /* BarChartDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartDataModels.swift; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				8BA71AFD23F52FE10012F385 /* Others */,
 				8B8BE6BF23F3DA52005C7E1B /* ContentView.swift */,
 				8B8BE6C923F3DA56005C7E1B /* Info.plist */,
+				B368CD2D2422B6DC002F1D7C /* Modifiers */,
 				B3DC797C241E4BCE009F3F13 /* Rotation */,
 				B3BE8636241D3CB400D39851 /* BlendMode */,
 				B3AA4421241CDD0700D2018A /* AspectRatio */,
@@ -525,6 +528,14 @@
 			path = LineView;
 			sourceTree = "<group>";
 		};
+		B368CD2D2422B6DC002F1D7C /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				B368CD2E2422B6EC002F1D7C /* ModifiersView.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		B39AF53324197E4500F5FF02 /* ControlModifiers */ = {
 			isa = PBXGroup;
 			children = (
@@ -690,6 +701,7 @@
 				8BA71B0523F534D40012F385 /* ToDoListView.swift in Sources */,
 				8BD1410F241672FA0000954D /* InsetViews.swift in Sources */,
 				B3A2F4F724182B0F00A55304 /* LinearGradient.swift in Sources */,
+				B368CD2F2422B6EC002F1D7C /* ModifiersView.swift in Sources */,
 				B3A25BEB2415822D00DF5930 /* BarChartView.swift in Sources */,
 				8BE994AE23F6BEF900E9B652 /* FancyScoreView.swift in Sources */,
 				B3A25BE2241572AF00DF5930 /* ProgressShape.swift in Sources */,
