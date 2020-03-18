@@ -40,7 +40,7 @@ struct ContentView: View {
                 .background(
                     RoundedRectangle(cornerRadius: 12)
                         .fill(Color.purple))
-            
+            Toggle("", isOn: $showShape).toggleStyle(CheckMarkToggleStyle(label: "Check on/off", color: Color.red))
             Button("show/hide") {
                 self.showShape.toggle()
             }
@@ -59,5 +59,24 @@ struct OrangeRectangle: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct CheckMarkToggleStyle: ToggleStyle {
+    var label = ""
+    var color = Color.primary
+    
+    func makeBody(configuration: Self.Configuration) -> some View {
+        HStack {
+            Text(label)
+            Button(action: { configuration.isOn.toggle() }) {
+                Image(systemName: configuration.isOn
+                    ? "checkmark.square.fill"
+                    : "square.fill")
+                    .foregroundColor(color)
+            }
+        }
+        .font(.title)
+        .padding(.horizontal)
     }
 }
