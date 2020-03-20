@@ -25,6 +25,7 @@
 		8B7B9CBD241283B7002E5B8B /* ArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B9CBC241283B7002E5B8B /* ArticleRequest.swift */; };
 		8B7B9CBF241283C7002E5B8B /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B9CBE241283C7002E5B8B /* Article.swift */; };
 		8B7B9CC124128725002E5B8B /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B9CC024128725002E5B8B /* UserView.swift */; };
+		8B8373642424EA6D00CE0466 /* DragFromLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8373632424EA6D00CE0466 /* DragFromLeftView.swift */; };
 		8B8BE6BC23F3DA52005C7E1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8BE6BB23F3DA52005C7E1B /* AppDelegate.swift */; };
 		8B8BE6BE23F3DA52005C7E1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8BE6BD23F3DA52005C7E1B /* SceneDelegate.swift */; };
 		8B8BE6C023F3DA52005C7E1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8BE6BF23F3DA52005C7E1B /* ContentView.swift */; };
@@ -36,6 +37,7 @@
 		8B91463223FABF56003E8923 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B91463123FABF56003E8923 /* Report.swift */; };
 		8B91463523FAC77C003E8923 /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B91463423FAC77C003E8923 /* GestureView.swift */; };
 		8B91463723FAC799003E8923 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B91463623FAC799003E8923 /* CardView.swift */; };
+		8BA65F012424A48C0097E998 /* DragTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA65F002424A48C0097E998 /* DragTestView.swift */; };
 		8BA71AFF23F530030012F385 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA71AFE23F530030012F385 /* StateView.swift */; };
 		8BA71B0223F534870012F385 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA71B0123F534870012F385 /* Task.swift */; };
 		8BA71B0523F534D40012F385 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA71B0423F534D40012F385 /* ToDoListView.swift */; };
@@ -101,6 +103,7 @@
 		8B7B9CBC241283B7002E5B8B /* ArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRequest.swift; sourceTree = "<group>"; };
 		8B7B9CBE241283C7002E5B8B /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		8B7B9CC024128725002E5B8B /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		8B8373632424EA6D00CE0466 /* DragFromLeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragFromLeftView.swift; sourceTree = "<group>"; };
 		8B8BE6B823F3DA52005C7E1B /* SwiftUI-Start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Start.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8BE6BB23F3DA52005C7E1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B8BE6BD23F3DA52005C7E1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +117,7 @@
 		8B91463123FABF56003E8923 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		8B91463423FAC77C003E8923 /* GestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureView.swift; sourceTree = "<group>"; };
 		8B91463623FAC799003E8923 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		8BA65F002424A48C0097E998 /* DragTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragTestView.swift; sourceTree = "<group>"; };
 		8BA71AFE23F530030012F385 /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
 		8BA71B0123F534870012F385 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		8BA71B0423F534D40012F385 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
@@ -351,6 +355,8 @@
 			isa = PBXGroup;
 			children = (
 				8B91463423FAC77C003E8923 /* GestureView.swift */,
+				8B8373632424EA6D00CE0466 /* DragFromLeftView.swift */,
+				8BA65F002424A48C0097E998 /* DragTestView.swift */,
 				8B91463623FAC799003E8923 /* CardView.swift */,
 			);
 			path = Gestures;
@@ -701,6 +707,7 @@
 				8BA71B0523F534D40012F385 /* ToDoListView.swift in Sources */,
 				8BD1410F241672FA0000954D /* InsetViews.swift in Sources */,
 				B3A2F4F724182B0F00A55304 /* LinearGradient.swift in Sources */,
+				8B8373642424EA6D00CE0466 /* DragFromLeftView.swift in Sources */,
 				B368CD2F2422B6EC002F1D7C /* ModifiersView.swift in Sources */,
 				B3A25BEB2415822D00DF5930 /* BarChartView.swift in Sources */,
 				8BE994AE23F6BEF900E9B652 /* FancyScoreView.swift in Sources */,
@@ -720,6 +727,7 @@
 				8BE994A923F6B19400E9B652 /* PlayButton.swift in Sources */,
 				8B7B9CB624128172002E5B8B /* UserRequest.swift in Sources */,
 				8B5335A823FBC7F800C4B5F3 /* FormView.swift in Sources */,
+				8BA65F012424A48C0097E998 /* DragTestView.swift in Sources */,
 				B311A0F12414FFF300DFB5FE /* LineView.swift in Sources */,
 				B311A0F32415021B00DFB5FE /* Line.swift in Sources */,
 				8B7B9CBD241283B7002E5B8B /* ArticleRequest.swift in Sources */,
