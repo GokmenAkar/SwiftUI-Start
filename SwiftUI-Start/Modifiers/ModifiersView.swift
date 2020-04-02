@@ -11,13 +11,33 @@ import SwiftUI
 struct ModifiersView: View {
     var body: some View {
         VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).modifier(TextModifier())
+            ZStack {
+                Color.yellow
+            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                .modifier(TextModifier())
+                .anchorPreference(key: BoundsPreferencesKey.self, value: .bounds) { $0 }
+            }
             Button("Okey") {
                 
             }.modifier(TextModifier())
             RoundedRectangle(cornerRadius: 14)
                 .addOutline(lineWidth: 8, trim: 1)
                 .padding()
+        } .overlayPreferenceValue(BoundsPreferencesKey.self) { preferences in
+            GeometryReader { geometry in
+                preferences.map {
+                    Rectangle()
+                        .stroke()
+                        .frame(
+                            width: geometry[$0].width,
+                            height: geometry[$0].height
+                    )
+                        .offset(
+                            x: geometry[$0].minX,
+                            y: geometry[$0].minY
+                    )
+                }
+            }
         }
     }
 }
@@ -52,3 +72,14 @@ extension Shape {
             .stroke(linearGradient, style: StrokeStyle(lineWidth: lineWidth, lineCap: .round))
     }
 }
+
+struct BoundsPreferencesKey: PreferenceKey {
+    typealias Value = Anchor<CGRect>?
+    static var defaultValue: Value = nil
+    
+    static func reduce(value: inout Value, nextValue: () -> Value) {
+        value = nextValue()
+    }
+}
+
+

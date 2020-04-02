@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B0BC06F23FC0BED00D5D583 /* FlagDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BC06E23FC0BED00D5D583 /* FlagDetailView.swift */; };
+		8B306E9E2435BD7000175B5A /* KeyboardHeightTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B306E9D2435BD7000175B5A /* KeyboardHeightTestView.swift */; };
 		8B3A37B923F40D5900F933DB /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A37B823F40D5900F933DB /* HikeDetail.swift */; };
 		8B3A37BD23F4256E00F933DB /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A37BC23F4256E00F933DB /* GridView.swift */; };
 		8B3A37C123F4283900F933DB /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A37C023F4283900F933DB /* Array+Extensions.swift */; };
@@ -57,6 +58,7 @@
 		8BE994B323F6CCDC00E9B652 /* EnviromentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE994B223F6CCDC00E9B652 /* EnviromentView.swift */; };
 		8BEB3F1123FE861F008960FD /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB3F1023FE861F008960FD /* AnimationView.swift */; };
 		8BEB3F1323FE9986008960FD /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB3F1223FE9986008960FD /* NotificationView.swift */; };
+		8BF72A4124266D5E00240921 /* ViewPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF72A4024266D5E00240921 /* ViewPreferences.swift */; };
 		8BF73DFB23F3F02A00B3977B /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF73DFA23F3F02A00B3977B /* HikeView.swift */; };
 		8BF73DFD23F3F03300B3977B /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF73DFC23F3F03300B3977B /* Hike.swift */; };
 		8BFC4E5724096085000D2315 /* BaseTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC4E5624096085000D2315 /* BaseTabbar.swift */; };
@@ -86,6 +88,7 @@
 
 /* Begin PBXFileReference section */
 		8B0BC06E23FC0BED00D5D583 /* FlagDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailView.swift; sourceTree = "<group>"; };
+		8B306E9D2435BD7000175B5A /* KeyboardHeightTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHeightTestView.swift; sourceTree = "<group>"; };
 		8B3A37B823F40D5900F933DB /* HikeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		8B3A37BC23F4256E00F933DB /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		8B3A37C023F4283900F933DB /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
@@ -137,6 +140,7 @@
 		8BE994B223F6CCDC00E9B652 /* EnviromentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentView.swift; sourceTree = "<group>"; };
 		8BEB3F1023FE861F008960FD /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		8BEB3F1223FE9986008960FD /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		8BF72A4024266D5E00240921 /* ViewPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPreferences.swift; sourceTree = "<group>"; };
 		8BF73DFA23F3F02A00B3977B /* HikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
 		8BF73DFC23F3F03300B3977B /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 		8BFC4E5624096085000D2315 /* BaseTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabbar.swift; sourceTree = "<group>"; };
@@ -175,6 +179,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B306E9C2435BD6200175B5A /* KeyboardHeight */ = {
+			isa = PBXGroup;
+			children = (
+				8B306E9D2435BD7000175B5A /* KeyboardHeightTestView.swift */,
+			);
+			path = KeyboardHeight;
+			sourceTree = "<group>";
+		};
 		8B3A37BB23F424BE00F933DB /* Grid */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +308,8 @@
 				8BA71AFD23F52FE10012F385 /* Others */,
 				8B8BE6BF23F3DA52005C7E1B /* ContentView.swift */,
 				8B8BE6C923F3DA56005C7E1B /* Info.plist */,
+				8B306E9C2435BD6200175B5A /* KeyboardHeight */,
+				8BF72A3F24266D4E00240921 /* Preferences */,
 				B368CD2D2422B6DC002F1D7C /* Modifiers */,
 				B3DC797C241E4BCE009F3F13 /* Rotation */,
 				B3BE8636241D3CB400D39851 /* BlendMode */,
@@ -477,6 +491,14 @@
 				8BEB3F1223FE9986008960FD /* NotificationView.swift */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		8BF72A3F24266D4E00240921 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				8BF72A4024266D5E00240921 /* ViewPreferences.swift */,
+			);
+			path = Preferences;
 			sourceTree = "<group>";
 		};
 		8BF73DFE23F3F0D500B3977B /* Hike */ = {
@@ -712,6 +734,7 @@
 				B3A25BEB2415822D00DF5930 /* BarChartView.swift in Sources */,
 				8BE994AE23F6BEF900E9B652 /* FancyScoreView.swift in Sources */,
 				B3A25BE2241572AF00DF5930 /* ProgressShape.swift in Sources */,
+				8BF72A4124266D5E00240921 /* ViewPreferences.swift in Sources */,
 				8B3A37BD23F4256E00F933DB /* GridView.swift in Sources */,
 				8BFC4E5724096085000D2315 /* BaseTabbar.swift in Sources */,
 				8BB7AB8623FD72970001409F /* SearchBar.swift in Sources */,
@@ -737,6 +760,7 @@
 				8B7B9CB424128159002E5B8B /* UserListView.swift in Sources */,
 				8B0BC06F23FC0BED00D5D583 /* FlagDetailView.swift in Sources */,
 				8BE994B023F6C6C500E9B652 /* UserSettings.swift in Sources */,
+				8B306E9E2435BD7000175B5A /* KeyboardHeightTestView.swift in Sources */,
 				B3BE863A241D408D00D39851 /* BlurTestView.swift in Sources */,
 				B3DC797E241E4BEF009F3F13 /* RotationView.swift in Sources */,
 				8BB7AB7F23FD5AB00001409F /* ImagePicker.swift in Sources */,
