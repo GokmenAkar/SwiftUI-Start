@@ -9,12 +9,14 @@
 import SwiftUI
 
 struct RadioButtonActionSheet: View {
+    @State var selected = ""
+    @State var show = false
     var body: some View {
         ZStack {
             Text("Home")
             VStack {
                 Spacer()
-                RadioButtons().offset(y: (UIApplication.shared.windows.last?.safeAreaInsets.bottom)! + 15)
+                RadioButtons(selected: self.$selected, show: self.$show).offset(y: (UIApplication.shared.windows.last?.safeAreaInsets.bottom)! + 15)
             }
         }.background(Color("Color2").edgesIgnoringSafeArea(.all))
     }
@@ -27,6 +29,8 @@ struct RadioButtonActionSheet_Previews: PreviewProvider {
 }
 
 struct RadioButtons: View {
+    @Binding var selected: String
+    @Binding var show: Bool
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             Text("Filter By")
@@ -34,23 +38,56 @@ struct RadioButtons: View {
                 .padding(.top)
             
             ForEach(data, id: \.self) { i in
-                Button(action: { }) {
+                Button(action: {
+                    
+                    self.selected = i
+                }) {
                     HStack {
                         Text(i)
                         Spacer()
-                        Circle()
+                        
+                        ZStack {
+                            Circle()
                             .fill(Color.black.opacity(0.5))
                             .frame(width: 20, height: 20)
+                            
+                            if self.selected == i {
+                                Circle().stroke(Color("Color1"), lineWidth: 4).frame(width: 30, height: 30)
+                            }
+                        }
+                        
                         
                     }.foregroundColor(.black)
                 }.padding(.top)
             }
+            HStack {
+                Spacer()
+                
+                Button(action: {
+                    
+                    self.show.toggle()
+                    
+                }) {
+                    Text("Continue").padding(.vertical).padding(.horizontal, 25).foregroundColor(.white)
+                }
+                .background(
+                    self.selected != "" ?
+                    
+                        LinearGradient(gradient: .init(colors: [Color("Color"), Color("Color1")]), startPoint: .leading, endPoint: .trailing) : LinearGradient(gradient: .init(colors: [Color.black.opacity(0.2), Color.black.opacity(0.2)]), startPoint: .leading, endPoint: .trailing)
+                    
+                    
+                
+                )
+                .clipShape(Capsule())
+                    .disabled(self.selected != "" ? false : true)
+            }.padding(.top)
+            
         }
         .padding(.vertical)
         .padding(.horizontal, 25)
         .padding(.bottom, (UIApplication.shared.windows.last?.safeAreaInsets.bottom)! + 15)
         .background(Color.white)
-        .cornerRadius(25)
+        .cornerRadius(30)
     }
 }
 
