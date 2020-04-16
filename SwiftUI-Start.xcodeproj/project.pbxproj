@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B0928D82448D04700397CE6 /* CardAnimationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0928D72448D04700397CE6 /* CardAnimationContentView.swift */; };
 		8B0BC06F23FC0BED00D5D583 /* FlagDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BC06E23FC0BED00D5D583 /* FlagDetailView.swift */; };
 		8B306E9E2435BD7000175B5A /* KeyboardHeightTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B306E9D2435BD7000175B5A /* KeyboardHeightTestView.swift */; };
 		8B3A37B923F40D5900F933DB /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A37B823F40D5900F933DB /* HikeDetail.swift */; };
@@ -88,6 +89,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B0928D72448D04700397CE6 /* CardAnimationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAnimationContentView.swift; sourceTree = "<group>"; };
 		8B0BC06E23FC0BED00D5D583 /* FlagDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailView.swift; sourceTree = "<group>"; };
 		8B306E9D2435BD7000175B5A /* KeyboardHeightTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHeightTestView.swift; sourceTree = "<group>"; };
 		8B3A37B823F40D5900F933DB /* HikeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
@@ -181,6 +183,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B0928D62448D03300397CE6 /* CardAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				8B0928D72448D04700397CE6 /* CardAnimationContentView.swift */,
+			);
+			path = CardAnimations;
+			sourceTree = "<group>";
+		};
 		8B306E9C2435BD6200175B5A /* KeyboardHeight */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +316,7 @@
 		8B8BE6BA23F3DA52005C7E1B /* SwiftUI-Start */ = {
 			isa = PBXGroup;
 			children = (
+				8B0928D62448D03300397CE6 /* CardAnimations */,
 				8BA0CF51244790E700B0A85D /* ActionSheetWithRadioButton */,
 				8B3A37BE23F4282B00F933DB /* Utils */,
 				8BA71AFD23F52FE10012F385 /* Others */,
@@ -784,6 +795,7 @@
 				8B67182C241654760029FDAB /* StrokeView.swift in Sources */,
 				8BE994AC23F6BE5200E9B652 /* FancyTimer.swift in Sources */,
 				B311A0E72414F3E800DFB5FE /* MarketView.swift in Sources */,
+				8B0928D82448D04700397CE6 /* CardAnimationContentView.swift in Sources */,
 				8B8BE6C023F3DA52005C7E1B /* ContentView.swift in Sources */,
 				8B91463723FAC799003E8923 /* CardView.swift in Sources */,
 				B3AA4423241CDD1600D2018A /* AspectRatio_Intro.swift in Sources */,
