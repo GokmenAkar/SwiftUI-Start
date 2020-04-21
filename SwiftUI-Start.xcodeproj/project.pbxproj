@@ -15,6 +15,7 @@
 		8B3A37C123F4283900F933DB /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A37C023F4283900F933DB /* Array+Extensions.swift */; };
 		8B3A37C323F4299600F933DB /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A37C223F4299600F933DB /* Car.swift */; };
 		8B3E8F2C23FC134400A53F14 /* FlagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3E8F2B23FC134400A53F14 /* FlagViewModel.swift */; };
+		8B41716A244F7B960033AEA6 /* 3DScrollEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B417169244F7B960033AEA6 /* 3DScrollEffect.swift */; };
 		8B5335A823FBC7F800C4B5F3 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5335A723FBC7F800C4B5F3 /* FormView.swift */; };
 		8B5335AA23FBCC7500C4B5F3 /* NotificationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5335A923FBCC7500C4B5F3 /* NotificationFormView.swift */; };
 		8B5335AD23FBD7BF00C4B5F3 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5335AC23FBD7BF00C4B5F3 /* ModalView.swift */; };
@@ -97,6 +98,7 @@
 		8B3A37C023F4283900F933DB /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		8B3A37C223F4299600F933DB /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		8B3E8F2B23FC134400A53F14 /* FlagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagViewModel.swift; sourceTree = "<group>"; };
+		8B417169244F7B960033AEA6 /* 3DScrollEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DScrollEffect.swift; sourceTree = "<group>"; };
 		8B5335A723FBC7F800C4B5F3 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		8B5335A923FBCC7500C4B5F3 /* NotificationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFormView.swift; sourceTree = "<group>"; };
 		8B5335AC23FBD7BF00C4B5F3 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
@@ -224,6 +226,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		8B417166244F72B90033AEA6 /* 3d Scroll Effect */ = {
+			isa = PBXGroup;
+			children = (
+				8B417169244F7B960033AEA6 /* 3DScrollEffect.swift */,
+			);
+			path = "3d Scroll Effect";
+			sourceTree = "<group>";
+		};
 		8B5335A623FBC7EA00C4B5F3 /* Forms */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +326,7 @@
 		8B8BE6BA23F3DA52005C7E1B /* SwiftUI-Start */ = {
 			isa = PBXGroup;
 			children = (
+				8B417166244F72B90033AEA6 /* 3d Scroll Effect */,
 				8B0928D62448D03300397CE6 /* CardAnimations */,
 				8BA0CF51244790E700B0A85D /* ActionSheetWithRadioButton */,
 				8B3A37BE23F4282B00F933DB /* Utils */,
@@ -762,6 +773,7 @@
 				8BFC4E5724096085000D2315 /* BaseTabbar.swift in Sources */,
 				8BB7AB8623FD72970001409F /* SearchBar.swift in Sources */,
 				8BA71B0823F5519E0012F385 /* BindingView.swift in Sources */,
+				8B41716A244F7B960033AEA6 /* 3DScrollEffect.swift in Sources */,
 				B3A25BED2415831100DF5930 /* LabelsView.swift in Sources */,
 				8B91463223FABF56003E8923 /* Report.swift in Sources */,
 				B3A25BE72415763500DF5930 /* BarsView.swift in Sources */,
