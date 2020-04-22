@@ -19,6 +19,7 @@
 		8B5335A823FBC7F800C4B5F3 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5335A723FBC7F800C4B5F3 /* FormView.swift */; };
 		8B5335AA23FBCC7500C4B5F3 /* NotificationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5335A923FBCC7500C4B5F3 /* NotificationFormView.swift */; };
 		8B5335AD23FBD7BF00C4B5F3 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5335AC23FBD7BF00C4B5F3 /* ModalView.swift */; };
+		8B56DDF024505AA3008083C7 /* PopUpReviewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56DDEF24505AA3008083C7 /* PopUpReviewButton.swift */; };
 		8B67182C241654760029FDAB /* StrokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B67182B241654760029FDAB /* StrokeView.swift */; };
 		8B7B9CB024127D79002E5B8B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B9CAF24127D79002E5B8B /* Service.swift */; };
 		8B7B9CB224127EB8002E5B8B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B9CB124127EB8002E5B8B /* User.swift */; };
@@ -102,6 +103,7 @@
 		8B5335A723FBC7F800C4B5F3 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		8B5335A923FBCC7500C4B5F3 /* NotificationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFormView.swift; sourceTree = "<group>"; };
 		8B5335AC23FBD7BF00C4B5F3 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		8B56DDEF24505AA3008083C7 /* PopUpReviewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpReviewButton.swift; sourceTree = "<group>"; };
 		8B67182B241654760029FDAB /* StrokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeView.swift; sourceTree = "<group>"; };
 		8B7B9CAF24127D79002E5B8B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		8B7B9CB124127EB8002E5B8B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -253,6 +255,14 @@
 			path = Modal;
 			sourceTree = "<group>";
 		};
+		8B56DDEE24505A90008083C7 /* PopupReviewButton */ = {
+			isa = PBXGroup;
+			children = (
+				8B56DDEF24505AA3008083C7 /* PopUpReviewButton.swift */,
+			);
+			path = PopupReviewButton;
+			sourceTree = "<group>";
+		};
 		8B67182D2416547D0029FDAB /* BarChart */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +336,7 @@
 		8B8BE6BA23F3DA52005C7E1B /* SwiftUI-Start */ = {
 			isa = PBXGroup;
 			children = (
+				8B56DDEE24505A90008083C7 /* PopupReviewButton */,
 				8B417166244F72B90033AEA6 /* 3d Scroll Effect */,
 				8B0928D62448D03300397CE6 /* CardAnimations */,
 				8BA0CF51244790E700B0A85D /* ActionSheetWithRadioButton */,
@@ -805,6 +816,7 @@
 				8B7B9CB8241281B1002E5B8B /* ServiceRequest.swift in Sources */,
 				B3BE8635241D334B00D39851 /* PositionView.swift in Sources */,
 				8B67182C241654760029FDAB /* StrokeView.swift in Sources */,
+				8B56DDF024505AA3008083C7 /* PopUpReviewButton.swift in Sources */,
 				8BE994AC23F6BE5200E9B652 /* FancyTimer.swift in Sources */,
 				B311A0E72414F3E800DFB5FE /* MarketView.swift in Sources */,
 				8B0928D82448D04700397CE6 /* CardAnimationContentView.swift in Sources */,
