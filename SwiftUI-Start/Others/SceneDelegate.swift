@@ -25,7 +25,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             let userView = KeyboardHeightTestView()
-            let contentView =  KeyboardHeightTestView()//EnviromentView().environmentObject(userSettings)
+            let contentView = _DScrollEffect(colors: [.blue, .green, .orange, .red, .gray, .pink, .yellow])
+()//EnviromentView().environmentObject(userSettings)
 
             window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
