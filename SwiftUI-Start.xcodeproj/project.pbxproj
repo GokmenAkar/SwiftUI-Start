@@ -20,6 +20,7 @@
 		8B5335AA23FBCC7500C4B5F3 /* NotificationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5335A923FBCC7500C4B5F3 /* NotificationFormView.swift */; };
 		8B5335AD23FBD7BF00C4B5F3 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5335AC23FBD7BF00C4B5F3 /* ModalView.swift */; };
 		8B56DDF024505AA3008083C7 /* PopUpReviewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56DDEF24505AA3008083C7 /* PopUpReviewButton.swift */; };
+		8B62D84B2454586C00032CAB /* EquatableContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B62D84A2454586C00032CAB /* EquatableContentView.swift */; };
 		8B67182C241654760029FDAB /* StrokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B67182B241654760029FDAB /* StrokeView.swift */; };
 		8B7B9CB024127D79002E5B8B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B9CAF24127D79002E5B8B /* Service.swift */; };
 		8B7B9CB224127EB8002E5B8B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B9CB124127EB8002E5B8B /* User.swift */; };
@@ -105,6 +106,7 @@
 		8B5335A923FBCC7500C4B5F3 /* NotificationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFormView.swift; sourceTree = "<group>"; };
 		8B5335AC23FBD7BF00C4B5F3 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		8B56DDEF24505AA3008083C7 /* PopUpReviewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpReviewButton.swift; sourceTree = "<group>"; };
+		8B62D84A2454586C00032CAB /* EquatableContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableContentView.swift; sourceTree = "<group>"; };
 		8B67182B241654760029FDAB /* StrokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeView.swift; sourceTree = "<group>"; };
 		8B7B9CAF24127D79002E5B8B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		8B7B9CB124127EB8002E5B8B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -265,6 +267,14 @@
 			path = PopupReviewButton;
 			sourceTree = "<group>";
 		};
+		8B62D8492454584000032CAB /* EquatableView */ = {
+			isa = PBXGroup;
+			children = (
+				8B62D84A2454586C00032CAB /* EquatableContentView.swift */,
+			);
+			path = EquatableView;
+			sourceTree = "<group>";
+		};
 		8B67182D2416547D0029FDAB /* BarChart */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +348,7 @@
 		8B8BE6BA23F3DA52005C7E1B /* SwiftUI-Start */ = {
 			isa = PBXGroup;
 			children = (
+				8B62D8492454584000032CAB /* EquatableView */,
 				8BB9EA212451728700A55672 /* InstagramStory */,
 				8B56DDEE24505A90008083C7 /* PopupReviewButton */,
 				8B417166244F72B90033AEA6 /* 3d Scroll Effect */,
@@ -806,6 +817,7 @@
 				8B5335AD23FBD7BF00C4B5F3 /* ModalView.swift in Sources */,
 				8B3A37C323F4299600F933DB /* Car.swift in Sources */,
 				8BE994A923F6B19400E9B652 /* PlayButton.swift in Sources */,
+				8B62D84B2454586C00032CAB /* EquatableContentView.swift in Sources */,
 				8B7B9CB624128172002E5B8B /* UserRequest.swift in Sources */,
 				8B5335A823FBC7F800C4B5F3 /* FormView.swift in Sources */,
 				8BA65F012424A48C0097E998 /* DragTestView.swift in Sources */,
